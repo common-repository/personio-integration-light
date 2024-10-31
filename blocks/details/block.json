@@ -1,0 +1,68 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "wp-personio-integration/details",
+	"version": "@@VersionNumber@@",
+	"title": "Details",
+	"category": "widgets",
+	"description": "Provides a Gutenberg Block for details of a single position managed by Personio.",
+	"keywords": ["Personio", "Positions", "Position"],
+	"supports": {
+		"color": {
+			"gradients": true,
+			"link": true
+		},
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true
+		},
+		"__experimentalBorder": true
+	},
+	"textdomain": "personio-integration-light",
+	"editorScript": "file:build/index.js",
+	"editorStyle": "file:build/index.css",
+	"style": "file:build/style-index.css",
+	"attributes": {
+		"preview": {
+			"type": "boolean",
+			"default": false
+		},
+		"id": {
+			"type": "integer",
+			"default": 0
+		},
+		"blockId": {
+			"type": "string"
+		},
+        "template": {
+            "type": "string",
+            "default": "default"
+        },
+		"excerptTemplates": {
+			"type": "array",
+			"default": ["recruitingCategory","schedule","office"]
+		},
+		"colon": {
+			"type": "boolean",
+			"default": true
+		},
+		"wrap": {
+			"type": "boolean",
+			"default": true
+		},
+        "separator": {
+            "type": "string",
+            "default": ", "
+        }
+	},
+	"example": {
+		"attributes": {
+			"preview": true
+		}
+	}
+}

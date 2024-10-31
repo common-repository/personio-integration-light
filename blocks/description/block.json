@@ -1,0 +1,52 @@
+{
+	"$schema": "https://json.schemastore.org/block.json",
+	"apiVersion": 2,
+	"name": "wp-personio-integration/description",
+	"version": "@@VersionNumber@@",
+	"title": "Description",
+	"category": "widgets",
+	"description": "Provides a Gutenberg Block for the description of a single position managed by Personio.",
+	"keywords": ["Personio", "Positions", "Position"],
+	"supports": {
+		"color": {
+			"gradients": true,
+			"link": true
+		},
+		"html": false,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true
+		},
+		"__experimentalBorder": true
+	},
+	"textdomain": "personio-integration-light",
+	"editorScript": "file:build/index.js",
+	"editorStyle": "file:build/index.css",
+	"style": "file:build/style-index.css",
+	"attributes": {
+		"template": {
+			"type": "string",
+			"default": "default"
+		},
+		"preview": {
+			"type": "boolean",
+			"default": false
+		},
+		"id": {
+			"type": "integer",
+			"default": 0
+		},
+		"blockId": {
+			"type": "string"
+		}
+	},
+	"example": {
+		"attributes": {
+			"preview": true
+		}
+	}
+}
